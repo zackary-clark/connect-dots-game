@@ -1,0 +1,55 @@
+:root {
+    --bg: #282828;
+    --red_1: #cc241d;
+    --green_2: #98971a;
+    --yellow_3: #d79921;
+    --blue_4: #458588;
+    --purple_5: #b16286;
+    --aqua_6: #689d6a;
+    --gray_7: #a89984;
+    --gray_8: #928374;
+    --red_9: #fb4934;
+    --green_10: #b8bb26;
+    --yellow_11: #fabd2f;
+    --blue_12: #83a598;
+    --purple_13: #d3869b;
+    --aqua_14: #8ec07c;
+    --fg: #ebdbb2;
+    --bg0_h: #1d2021;
+    --bg0: #282828;
+    --bg1: #3c3836;
+    --bg2: #504945;
+    --bg3: #665c54;
+    --bg4: #7c6f64;
+    --orange: #d65d0e;
+    --bg0_s: #32302f;
+    --fg4: #a89984;
+    --fg3: #bdae93;
+    --fg2: #d5c4a1;
+    --fg1: #ebdbb2;
+    --fg0: #fbf1c7;
+    --orange_bright: #fe8019;
+    --primary: #83a598;
+    --secondary: #a58390;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg0);
+}
+
+a:link {
+    color: var(--blue_4);
+}
+
+a:visited {
+    color: var(--purple_5);
+}
+
+.main {
+    padding: 1em;
+}
+
+::selection {
+    background-color: var(--blue_12);
+}
