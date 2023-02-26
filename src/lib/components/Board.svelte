@@ -1,24 +1,17 @@
 <script>
     import HorizontalRow from "$lib/components/HorizontalRow.svelte";
     import VerticalRow from "$lib/components/VerticalRow.svelte";
+    import { generateBoardLines } from "$lib/board";
 
-    export let size = 6;
-
-    const clickedBoard = [];
-
-    for (let i = 0; i < size; i++) {
-        clickedBoard.push(Array(size));
-        clickedBoard.push(Array(size+1));
-    }
-    clickedBoard.push(Array(size))
+    const boardLines = generateBoardLines();
 </script>
 
 <div class="board">
-    {#each clickedBoard as clickedRow, index}
+    {#each boardLines as boardLine, index}
         {#if index % 2 === 0}
-            <HorizontalRow clickedRow={clickedRow} />
+            <HorizontalRow lineRow={boardLine} />
         {:else}
-            <VerticalRow clickedRow={clickedRow} />
+            <VerticalRow lineRow={boardLine} />
         {/if}
     {/each}
 </div>

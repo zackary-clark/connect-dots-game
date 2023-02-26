@@ -19,5 +19,6 @@ module.exports = {
 	},
     rules: {
         'a11y-click-events-have-key-events': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
     }
 };
